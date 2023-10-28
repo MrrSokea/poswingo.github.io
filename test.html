@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>QR Code Scanner</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+</head>
+
+<body>
+  <video id="video" autoplay playsinline></video>
+  <canvas id="canvas" style="display: none;"></canvas>
+  <button id="frontCameraBtn">Front Camera</button>
+  <button id="backCameraBtn">Back Camera</button>
+
+  <script src="https://cdn.rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+
+  <script>
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const frontCameraBtn = document.getElementById('frontCameraBtn');
+    const backCameraBtn = document.getElementById('backCameraBtn');
+
+    let activeCamera = 'environment'; // 'user' for front camera, 'environment' for back camera
+
+    // Switch between front and back cameras
+    frontCameraBtn.addEventListener('click', () => {
+      activeCamera = 'user';
+      initializeCamera();
+    });
+
+    backCameraBtn.addEventListener('click', () => {
+      activeCamera = 'environment';
+      initializeCamera();
+    });
+
+    // Initialize the camera feed
+    function initializeCamera() {
+      const constraints = {
+        video: { facingMode: { exact: activeCamera } }
+      };
+
+      navigator.mediaDevices.getUserMedia(constraints)
+        .then(stream => {
+          video.srcObject = stream;
+          video.play();
+        })
+        .catch(error => console.error('Error accessing camera:', error));
+    }
+
+    // Initialize camera on page load
+    initializeCamera();
+
+    // Listen for video play and start QR code scanning
+    video.addEventListener('play', () => {
+      const scanner = new Instascan.Scanner({ video: video });
+
+      scanner.addListener('scan', content => {
+        // Handle the scanned QR code content here
+        alert('Scanned: ' + content);
+      });
+
+      Instascan.Camera.getCameras()
+        .then(cameras => {
+          if (cameras.length > 0) {
+            // Choose the appropriate camera based on activeCamera
+            const camera = activeCamera === 'user' ? cameras.find(c => c.facing === 'user') : cameras[0];
+            scanner.start(camera);
+          } else {
+            console.error('No cameras found.');
+          }
+        })
+        .catch(error => console.error('Error getting cameras:', error));
+    });
+
+  </script>
+</body>
+
+</html>
+

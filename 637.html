@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="img/top-logo.png">
+
+  <title>Wingo | POS</title>
+
+  <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.js"></script>
+
+  <link href="css/app.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+
+<body id="page-top">
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-dark">
+      <!-- Sidebar - Brand -->
+      <div class="sidebar-brand bg-dark">
+        <div style="display: flex;">
+          <div class="sidebar-brand-icon">
+            <a href="2d.html"><img class="img-profile" src="img/profile.png" alt="user profile" /></a>
+          </div>
+          <span class="sidebar-brand-text">
+            User ID:26000023 <br>
+            Last Login: 10 Oct 2021
+          </span>
+        </div>
+      </div>
+
+      <div class="inner-sidebar overflow-auto">
+        <!-- Nav Item - Transaction -->
+        <li class="nav-item active">
+          <div class="nav-link" href="2d.html">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span>Transaction</span>
+          </div>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="2d.html">
+            <span>Sales</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="redeem.html">
+            <span>Redeem</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="topup-with-tran.html">
+            <span>Top up/Withdraw/Transfer</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+
+
+
+
+        <li class="nav-item active">
+          <div class="nav-link" href="2d.html">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span>Query</span>
+          </div>
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="draw_result.html">
+            <span>Draw Result</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="bonus_report.html">
+            <span>Bonus Report</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="real-time-report.html">
+            <span>Real-Time-Report</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="capital.html">
+            <span>Capital</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="settlement.html">
+            <span>Settlement</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="transaction_record.html">
+            <span>Transaction Record</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+
+
+        <!-- Nav Item - Setting -->
+        <li class="nav-item active">
+          <div class="nav-link" href="">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Setting</span>
+          </div>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="modify_login.html">
+            <span>Modify Login Password</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="modify_pass.html">
+            <span>Modify Tran Password</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="">
+            <span>Printer Test</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <hr class="sidebar-divider" />
+
+        <a href="login.html">
+          <li
+            style="height: 30px;background-color: cadetblue;display: flex;justify-content: center;align-items: center;color: black;">
+            logout</li>
+        </a>
+
+      </div>
+      <!--End inner sidebar-->
+
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block" />
+
+    </ul>
+    <!-- End of Sidebar -->
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-dark topbar static-top shadow ">
+          <div class="topbar-divider d-none d-sm-block"></div>
+          <div class="header-title">
+            6/37
+          </div>
+          <!-- Sidebar Toggle (Topbar) -->
+          <hr class="sidebar-divider my-0" />
+          <!-- Topbar Navbar -->
+          <hr class="hr_2">
+          <div class="topbar-divider d-none d-sm-block"></div>
+          <!-- Nav Item - User Information -->
+          <div class="issue">
+            <div class="issue-date">
+              <p>Issue W01210825003</p>
+            </div>
+            <div class="curren-time">
+              <span>05:10</span>
+            </div>
+            <div style="display: flex;justify-content: center;align-items: center;gap: 5px;">
+              <a href="allGame.html"><img src="img/home.png" alt="" class="img-home"></a>
+            </div>
+
+          </div>
+
+        </nav>
+        <!-- End of Topbar -->
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+          <div class="full_g">
+            <div class="block_tem_game">
+              <div class="main-content">
+                <div class="custom-key-sale">
+                  <div class="key-row1">
+                    <div class="btn-text-primary_sale shadowed s-num">01</div>
+                    <div class="btn-text-primary_sale shadowed s-num">02</div>
+                    <div class="btn-text-primary_sale shadowed s-num">03</div>
+                    <div class="btn-text-primary_sale shadowed s-num">04</div>
+                    <div class="btn-text-primary_sale shadowed s-num">05</div>
+                    <div class="btn-text-primary_sale shadowed s-num">06</div>
+                    <div class="btn-text-primary_sale shadowed s-num">07</div>
+                    <div class="btn-text-primary_sale shadowed s-num">08</div>
+                    <div class="btn-text-primary_sale shadowed s-num">09</div>
+                    <div class="btn-text-primary_sale shadowed s-num">10</div>
+                  </div>
+                  <div class="key-row1">
+                    <div class="btn-text-primary_sale shadowed s-num">11</div>
+                    <div class="btn-text-primary_sale shadowed s-num">12</div>
+                    <div class="btn-text-primary_sale shadowed s-num">13</div>
+                    <div class="btn-text-primary_sale shadowed s-num">14</div>
+                    <div class="btn-text-primary_sale shadowed s-num">15</div>
+                    <div class="btn-text-primary_sale shadowed s-num">16</div>
+                    <div class="btn-text-primary_sale shadowed s-num">17</div>
+                    <div class="btn-text-primary_sale shadowed s-num">18</div>
+                    <div class="btn-text-primary_sale shadowed s-num">19</div>
+                    <div class="btn-text-primary_sale shadowed s-num">20</div>
+                  </div>
+                  <div class="key-row1">
+                    <div class="btn-text-primary_sale shadowed s-num">21</div>
+                    <div class="btn-text-primary_sale shadowed s-num">22</div>
+                    <div class="btn-text-primary_sale shadowed s-num">23</div>
+                    <div class="btn-text-primary_sale shadowed s-num">24</div>
+                    <div class="btn-text-primary_sale shadowed s-num">25</div>
+                    <div class="btn-text-primary_sale shadowed s-num">26</div>
+                    <div class="btn-text-primary_sale shadowed s-num">27</div>
+                    <div class="btn-text-primary_sale shadowed s-num">28</div>
+                    <div class="btn-text-primary_sale shadowed s-num">29</div>
+                    <div class="btn-text-primary_sale shadowed s-num">30</div>
+                  </div>
+                  <div class="key-row1">
+                    <div class="btn-text-primary_sale shadowed s-num">31</div>
+                    <div class="btn-text-primary_sale shadowed s-num">32</div>
+                    <div class="btn-text-primary_sale shadowed s-num">33</div>
+                    <div class="btn-text-primary_sale shadowed s-num">34</div>
+                    <div class="btn-text-primary_sale shadowed s-num">35</div>
+                    <div class="btn-text-primary_sale shadowed s-num">36</div>
+                    <div class="btn-text-primary_sale shadowed s-num">37</div>
+                    <div class="btn-text-primary_sale-random shadowed" id="randFive637">+RANDOM5</div>
+                  </div>
+                  <div class="key-row1_sale">
+                    <div class="btn-text-primary_sale_m_sale shadowed t-num">
+                      <span class="largetext">1</span><br>
+                      <span class="smalltext">(21-81)</span>
+                    </div>
+                    <div class="btn-text-primary_sale_m_sale shadowed t-num">
+                      <span class="largetext">2</span><br>
+                      <span class="smalltext">(82-101)</span>
+                    </div>
+                    <div class="btn-text-primary_sale_m_sale shadowed t-num">
+                      <span class="largetext">3</span><br>
+                      <span class="smalltext">(102-126)</span>
+                    </div>
+                    <div class="btn-text-primary_sale_m_sale shadowed t-num">
+                      <span class="largetext">4</span><br>
+                      <span class="smalltext">(127-146)</span>
+                    </div>
+                    <div class="btn-text-primary_sale_m_sale shadowed t-num">
+                      <span class="largetext">5</span><br>
+                      <span class="smalltext">(147-207)</span>
+                    </div>
+                    <div class="btn-text-primary_sale_m_sale_e disabled">
+                      <span class="issuetitle">Issue: 00011223</span><br>
+                      <span class="timetitle">End Time</span><br>
+                      <span class="time-l">04:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-config">
+                  <div class="row">
+                    <div class="col">
+                      <form>
+                        <div class="form-row">
+                          <div class="col-2">
+                            <p class="form-control p-design-a-p" id="qty">1</p>
+                          </div>
+                          <div class="col-3">
+                            <p class="form-control p-design-a-p" id="price"><span id="hprice">1</span><span>000R</span>
+                            </p>
+                          </div>
+                          <div class="col-3">
+                            <select class="form-control p-design-a-p">
+                              <option name="" id="">09:00 am</option>
+                              <option name="" id="">10:30 am</option>
+                              <option name="" id="">12:00 am</option>
+                              <option name="" id="">02:00 pm</option>
+                              <option name="" id="">04:00 pm</option>
+                              <option name="" id="">06:00 pm</option>
+                            </select>
+                          </div>
+                          <div class="col-4 block-q-a-design">
+                            <div class="qty text-q-a">QTY: <span id="Cqty">0</span></div>
+                            <div class="amt text-q-a">AMT: <span id="amt"></span>000R</div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-bottom" id="content-bottom">
+
+                </div>
+                <!---End config-->
+                <div class="content-key-board" id="qtyKeybord">
+                  <div class="grid-keypad">
+                    <div class="btn-key-design btn-text-primary shadowed key buyBCart buy_img"><img src="img/cart_plus.png"
+                        height="30px" alt=""></i></div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="1">1</button></div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="2">2</button></div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="3">3</button></div>
+                    <div class="btn-key-design btn-text-primary shadowed key" onclick="easy_numpad_del_qty637()"
+                      type="button"><img src="img/close.webp" height="40px" alt=""></div>
+                    <div class="btn-key-design btn-text-primary shadowed key key-print" aria-disabled="false"
+                      data-toggle="modal" data-target="#staticBackdrop"><img src="img/print.png" height="50px" alt="">
+                    </div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="4">4</button>
+                    </div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="5">5</button>
+                    </div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="6">6</button>
+                    </div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="7">7</button>
+                    </div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="8">8</button>
+                    </div>
+                    <div class="btn-key-design btn-text-primary shadowed key"><button onclick="FunQty637()"
+                        value="9">9</button>
+                    </div>
+                    <div class="btn-key-design btn-text-primary shadowed key zerokey">
+                      <button onclick="FunQty637()" value="0">0</button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="content-key-board d-none" id="priceKeybord">
+                <div class="grid-keypad">
+                  <div class="btn-key-design btn-text-primary shadowed key buyBCart buy_img"><img src="img/cart_plus.png"
+                      height="30px" alt=""></i></div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="1">1</button></div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="2">2</button></div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="3">3</button></div>
+                  <div class="btn-key-design btn-text-primary shadowed key" onclick="easy_numpad_del_price637()"
+                    type="button"><img src="img/close.webp" height="40px" alt=""></div>
+                  <div class="btn-key-design btn-text-primary shadowed key key-print" aria-disabled="false"
+                    data-toggle="modal" data-target="#staticBackdrop"><img src="img/print.png" height="50px" alt="">
+                  </div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="4">4</button>
+                  </div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="5">5</button>
+                  </div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="6">6</button>
+                  </div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="7">7</button>
+                  </div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="8">8</button>
+                  </div>
+                  <div class="btn-key-design btn-text-primary shadowed key"><button onclick="price637()"
+                      value="9">9</button>
+                  </div>
+                  <div class="btn-key-design btn-text-primary shadowed key zerokey">
+                    <button onclick="price637()" value="0">0</button>
+                  </div>
+
+                </div>
+              </div>
+              <!--End keyboard-->
+            </div>
+            <div class="block_tem_cart inner-top">
+            <div class="cart cart-height">
+              <div class="card-header">
+                Your Cart
+              </div>
+              <ul class="list-group list-group-flush" id="resultPrint">
+                <div class="inner-cart overflow-auto">
+                  <!--THE RESULT WILL APPEAR HERE-->
+                </div>
+              </ul>
+              <div class="total total-other">
+                <div class="block_result">
+                  <div class="div-total">
+                    <div class="total_amount">
+                      <span>Total amount:</span><span class="TotalAmount" id="TotalAmount"></span>R
+                    </div>
+                    <div class="sale_today">
+                      <span>Sale Todaty:</span><span>00R</span>
+                    </div>
+                  </div>
+                  <div class="div-total">
+                    <div class="bounus">
+                      <span>Bouns:</span><span>16500R</span>
+                    </div>
+                    <div class="balance_t">
+                      <span>balance:</span><span>177000R</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!--End total-->
+            </div>
+            <!--End cart-->
+
+          </div>
+          </div>
+          
+          <!--End col-4-->
+        </div>
+        <!-- Modal -->
+      </div>
+
+
+    </div>
+    <!-- /.container-fluid -->
+    <!-- Footer -->
+    <!-- <footer class="bg-white"></footer> -->
+    <!-- End of Footer -->
+  </div>
+  <!-- End of Main Content -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <div class="ticket text-center">
+            <img src="img/receipt-logo.bmp" alt="logo">
+            <div class="head-note">
+              <div class="receipt-number text-left">765-657-332-675-098-980-0</div>
+              <div class="receipt-id">
+                <p>ID: wingo08</p>
+                <p>W01220128001</p>
+              </div>
+              <div class="receipt-date text-left">2022-01-28 08:45:56</div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th class="post">6/37</th>
+                  <th class="description"></th>
+                </tr>
+              </thead>
+              <tbody id="addRow">
+
+
+              </tbody>
+            </table>
+            <p class="centered">TOTAL AMT: <span id="pri-result"></span></p>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary hidden-print" data-dismiss="modal">Cancel</button>
+              <button type="button" id="btnPrint" class="btn btn-primary hidden-print">Print</button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/637.js"></script>
+  <script src="js/print.js"></script>
+  <script src="js/index.js"></script>
+
+  <script>
+    const $btnPrint = document.querySelector("#btnPrint");
+    $btnPrint.addEventListener("click", () => {
+      window.print();
+    });
+  </script>
+
+</body>
+
+</html>
