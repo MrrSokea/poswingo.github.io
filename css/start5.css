@@ -1,0 +1,276 @@
+.contain-sale-star5 {
+    height: 341px;
+    display: flex;
+}
+
+.contain-big-small {
+    width: 40%;
+    padding: 40px 20px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.contain-sale-number {
+    width: 60%;
+    padding: 20px;
+    position: relative;
+}
+.flex-num {
+    display: flex;
+}
+
+.bt-sale-small {
+    font-size: 38px;
+    font-family: kh;
+    font-weight: 600;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 21px 0px;
+    margin-bottom: 19px;
+    width: 100%;
+}
+
+.bt-sale-big {
+    font-size: 38px;
+    font-family: kh;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 21px 0px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.set-time {
+    padding: 20px 0px;
+}
+
+.number-sale {
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    margin: 5px;
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+}
+.number-sale-5{
+    height: 150px;
+    width: 41%;
+    background-color: white;
+    margin: 2px;
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 105px;
+    border-radius: 20px;
+    left: 29%;
+    border: 8px solid #eeeff5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.con-sale1{
+    border-radius: 20px 0px 0px 0px;
+}
+.con-sale2{
+    border-radius: 0px 20px 0px 0px;
+}
+.con-sale3{
+    border-radius: 0px 0px 20px 0px;
+}
+.con-sale4{
+    border-radius: 0px 0px 0px 20px;
+}
+.sale1 {
+    position: absolute;
+    left: 70px;
+    top: 35px;
+}
+
+.sale2 {
+    position: absolute;
+    right: 70px;
+    top: 35px;
+}
+
+.sale3 {
+    position: absolute;
+    right: 70px;
+    top: 35px;
+}
+
+.sale4 {
+    position: absolute;
+    left: 70px;
+    top: 35px;
+}
+.bt-key-blue{
+   background-color: darkblue;
+   color: white;
+   font-family: kh;
+   font-size: 18px;
+}
+.time-run{
+    font-size: 25px;
+    font-weight: 600;
+    color: red;
+}
+@media(max-width: 1258px){
+    .sale1 {
+        left: 40px;
+        top: 30px;
+    }
+    
+    .sale2 {
+        right: 40px;
+        top: 30px;
+    }
+    
+    .sale3 {
+        right: 40px;
+        top: 50px;
+    }
+    
+    .sale4 {
+        left: 40px;
+        top: 50px;
+    }
+    .bt-sale-small {
+        font-size: 38px;
+        font-family: kh;
+        padding: 21px 0px;
+        margin-bottom: 19px;
+        width: 100%;
+    }
+    
+    .bt-sale-big {
+        font-size: 38px;
+        font-weight: 600;
+        padding: 21px 0px;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 700px){
+    .sale1 {
+        left: 40px;
+        top: 5px;
+    }
+    
+    .sale2 {
+        right: 40px;
+        top: 5px;
+    }
+    
+    .sale3 {
+        right: 40px;
+        top: 40px;
+    }
+    
+    .sale4 {
+        left: 40px;
+        top: 40px;
+    }
+    .bt-sale-small {
+        font-size: 25px;
+        font-family: kh;
+        padding: 10px 0px;
+        margin-bottom: 5px;
+        margin: 5px;
+    }
+    
+    .bt-sale-big {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 10px 0px;
+        margin-bottom: 5px;
+        margin: 5px;
+    }
+    .contain-big-small {
+        height: 240px;
+    }
+    .number-sale{
+        height: 100px;
+    }
+    .number-sale-5{
+        top: 70px;
+    }
+    .contain-sale-number{
+        padding: 10px;
+    }
+}
+@media(max-width: 400px){
+    
+    /* 
+    
+   
+    .number-sale{
+        height: 100px;
+    }
+    
+    */
+    .bt-sale-small {
+        font-size: 20px;
+        font-family: kh;
+        padding: 10px 0px;
+        margin-bottom: 5px;
+        margin: 5px;
+    }
+    
+    .bt-sale-big {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 0px;
+        margin-bottom: 5px;
+        margin: 5px;
+    }
+    .contain-sale-number{
+        position: absolute;
+        width: 100%;
+    }
+    .contain-big-small {
+       width: 100%;
+       flex-direction: row;
+       margin-top: 170px;
+       justify-content: space-between;
+       padding: 5px;
+       height: 70px;
+    }
+    .number-sale{
+        height: 70px;
+    }
+    .number-sale-5{
+        top: 52px;
+    }
+    .sale1 {
+        left: 40px;
+        top: 5px;
+    }
+    
+    .sale2 {
+        right: 40px;
+        top: 5px;
+    }
+    
+    .sale3 {
+        right: 40px;
+        top: 10px;
+    }
+    
+    .sale4 {
+        left: 40px;
+        top: 10px;
+    }
+}
