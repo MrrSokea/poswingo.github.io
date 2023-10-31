@@ -34,12 +34,11 @@ $(document).ready(function () {
     console.log(myArray)
 
     if(myArray[0].Type=="User"){
-        $(".buy_img").addClass("cart-btn")
         $(".key-print").addClass("d-none")
+        $(".buy").removeClass("d-none")
         $(".type-user").text(myArray[0].Type)
-        // $(".buyTwoD").css("position","absul")
     }else{
-        $(".buyBCart").removeClass("cart-btn")
+        $(".buy").addClass("d-none")
         $(".key-print").removeClass("d-none")
         $(".type-user").text("Agent")
     }
@@ -47,5 +46,7 @@ $(document).ready(function () {
         localStorage.clear();             
         window.location.href = "index.html";
     })
-
+  $(".buy").on("click",function(){
+    $(".inner-cart").empty()
+  })
 });
