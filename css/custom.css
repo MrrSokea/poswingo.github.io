@@ -2139,6 +2139,9 @@ input[type=number] {
 .key-print {
   grid-row: 2 / span 2;
 }
+.buy {
+  grid-row: 2 / span 2;
+}
 
 button {
   color: #858796;
@@ -2269,7 +2272,9 @@ button {
 .cart-btn {
   grid-area: 1 / 1 / span 3 / span 1;
 }
-
+.buy{
+  color: red;
+}
 @media(max-width: 600px) {
   .header-title {
     font-size: 13px;
