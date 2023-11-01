@@ -450,8 +450,8 @@
   </div>
   <!-- End of Main Content -->
   <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
+    aria-labelledby="staticBackdropLabel" aria-hidden="true" style="width: 100%;border: 5px solid;">
+    <div class="modal-dialog"  >
       <div class="modal-content">
         <div class="modal-body">
 
@@ -478,7 +478,9 @@
               </tbody>
             </table>
             <p class="centered">TOTAL AMT: <span id="pri-result"></span></p>
-
+            <div class="block-qr">
+              <img src="img/qr.PNG" alt="">
+            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary hidden-print" data-dismiss="modal">Cancel</button>
               <button type="button" id="btnPrint" class="btn btn-primary hidden-print">Print</button>
