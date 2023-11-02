@@ -408,63 +408,37 @@
       <!-- End of Footer -->
     </div>
     <!-- End of Main Content -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-body">
-
-            <div class="ticket text-center">
-              <img src="img/receipt-logo.bmp" alt="logo">
-              <div class="head-note">
-                <div class="receipt-number text-left">765-657-332-675-098-980-0</div>
-                <div class="receipt-id">
-                  <p>ID: wingo08</p>
-                  <p>W01220128001</p>
-                </div>
-                <div class="receipt-date text-left">2022-01-28 08:45:56</div>
-              </div>
-              <table>
-                <thead>
-                  <tr>
-                    <th class="post">Fruit</th>
-                    <th class="description"></th>
-                  </tr>
-                </thead>
-                <tbody id="addRow">
-
-
-                </tbody>
-              </table>
-              <p class="centered">TOTAL AMT: <span id="pri-result"></span></p>
-              <div class="block-qr">
-                <img src="img/qr.PNG" alt="">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary hidden-print" data-dismiss="modal">Cancel</button>
-                <button type="button" id="btnPrint" class="btn btn-primary hidden-print">Print</button>
-              </div>
-            </div>
-
-          </div>
-
-
-        </div>
-
+  </div>
+  <div class="ticket text-center">
+    <img class="img-logo-recipe" src="img/receipt-logo.bmp" alt="logo">
+    <div class="head-note">
+      <div class="receipt-number text-left">765-657-332-675-098-980-0</div>
+      <div class="receipt-id">
+        <p>ID: wingo08</p>
+        <p>W01220128001</p>
       </div>
+      <div class="receipt-date text-left">2022-01-28 08:45:56</div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="post">Fruit</th>
+          <th class="description"></th>
+        </tr>
+      </thead>
+      <tbody id="addRow">
+
+
+      </tbody>
+    </table>
+    <p class="centered">TOTAL AMT: <span id="pri-result"></span></p>
+    <div class="block-qr">
+      <img class="img-qr" src="img/qr.PNG" alt="">
     </div>
   </div>
-
   <script src="js/script.js"></script>
   <script src="js/fruit.js"></script>
   <script src="js/print.js"></script>
-
-  <script>
-    const $btnPrint = document.querySelector("#btnPrint");
-    $btnPrint.addEventListener("click", () => {
-      window.print();
-    });
-  </script>
   <script src="js/index.js"></script>
 
 </body>
