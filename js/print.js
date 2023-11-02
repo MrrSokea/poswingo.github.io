@@ -27,7 +27,6 @@ $(".key-print").click(function () {
     } else {
         $(".ticket").removeClass("d-none");
         window.print()
-        $(".ticket").addClass("d-none");
     }
    
 })
