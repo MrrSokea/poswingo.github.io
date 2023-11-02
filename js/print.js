@@ -25,7 +25,6 @@ $(".key-print").click(function () {
     if (($("#TotalAmount").text() == "") || (parseInt($("#TotalAmount").text()) < 1000)) {
         $(this).removeAttr("data-target");
     } else {
-        $(".ticket").removeClass("d-none");
         window.print()
     }
    
