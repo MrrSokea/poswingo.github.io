@@ -78,7 +78,7 @@ th.price {
 
 @media print {
     @page {
-        size: 80mm 200mm;
+        size:50mm 200mm;
         margin: 0;
         padding: 0;
         top: 0;
