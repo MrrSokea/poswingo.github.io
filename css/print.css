@@ -14,7 +14,7 @@
     }
 
     .img-logo-recipe {
-        width: 200px;
+        width: 300px;
     }
 }
 
@@ -78,7 +78,7 @@ th.price {
 
 @media print {
     @page {
-        size:80mm 200mm;
+        size: 80mm 200mm;
         margin: 0;
         padding: 0;
         top: 0;
@@ -89,5 +89,6 @@ th.price {
     }
     .ticket {
         display: block;
+        font-size: 25px;
     }
 }
