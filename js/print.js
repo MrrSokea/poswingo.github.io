@@ -51,10 +51,12 @@ $(".buyArrang3d").on("click", function () {
 })
 
 $(".key-print").click(function () {
-    if (($("#TotalAmount").text() == "") || (parseInt($("#TotalAmount").text()) < 1000)) {
-        $(this).removeAttr("data-target");
-    } else {
-        window.print()
-    }
+   window.android.printerJson(jsondata)
+   window.android.printerString(stringdata);
+   //  if (($("#TotalAmount").text() == "") || (parseInt($("#TotalAmount").text()) < 1000)) {
+   //      $(this).removeAttr("data-target");
+   //  } else {
+   //      window.print()
+   //  }
 
 })
