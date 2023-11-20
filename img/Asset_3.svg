@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.78 35.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00e676;
+      }
+
+      .cls-2 {
+        fill: #90caf9;
+      }
+
+      .cls-3 {
+        fill: #242424;
+      }
+
+      .cls-4 {
+        fill: #42a5f5;
+      }
+
+      .cls-5 {
+        fill: #424242;
+      }
+
+      .cls-6 {
+        fill: #1976d2;
+      }
+
+      .cls-7 {
+        fill: #616161;
+      }
+    </style>
+  </defs>
+  <g id="OBJECTS">
+    <g id="Group_4" data-name="Group 4">
+      <path id="Path_11291" data-name="Path 11291" class="cls-7" d="M0,19.84H37.78v-6.61c0-2.09-1.69-3.78-3.78-3.78H3.78C1.69,9.45,0,11.14,0,13.22v6.61Z"/>
+      <path id="Path_11292" data-name="Path 11292" class="cls-5" d="M4.72,6.61h28.34v2.83H4.72v-2.83Zm-.94,23.61h30.23c2.09,0,3.78-1.69,3.78-3.78h0v-7.56H0v7.56c0,2.09,1.69,3.78,3.78,3.78h0"/>
+      <path id="Path_11293" data-name="Path 11293" class="cls-1" d="M33.06,13.22c0,.52,.42,.94,.94,.94,.52,0,.94-.42,.94-.94s-.42-.94-.94-.94h0c-.52,0-.94,.42-.94,.94"/>
+      <path id="Path_11294" data-name="Path 11294" class="cls-3" d="M31.64,25.5H6.14c-.78,0-1.42-.63-1.42-1.42,0-.78,.63-1.42,1.42-1.42H31.64c.78,0,1.42,.63,1.42,1.42,0,.78-.63,1.42-1.42,1.42"/>
+      <path id="Path_11295" data-name="Path 11295" class="cls-2" d="M6.61,0H31.17V9.45H6.61V0Zm0,25.5H31.17v10.39H6.61v-10.39Z"/>
+      <path id="Path_11296" data-name="Path 11296" class="cls-4" d="M6.61,23.61H31.17v1.89H6.61v-1.89Z"/>
+      <g id="Group_3" data-name="Group 3">
+        <path id="Path_11297" data-name="Path 11297" class="cls-6" d="M11.33,27.39H27.39v1.89H11.33v-1.89Zm0,3.78h12.28v1.89H11.33v-1.89Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -49,21 +49,23 @@ $("#srandFive").on("click", function () {
 $(".buyArrang3d").on("click", function () {
    gotPrint()
 })
-
+$("#selected").on("click", function () {
+   gotPrint()
+})
 $(".key-print").click(function () {
    // window.android.printerJson(jsondata)
-   var jsondata = "[\n" +
-   "  {\"code\": \"7 |6/37-ZX|SPC|\", \"value\": \"1000R\"},\n" +
-   "  {\"code\": \"7 |6/37-ZX|SPC|\", \"value\": \"1000R\"},\n" +
-   "  {\"code\": \"22 |6/37-ZX|SPC|\", \"value\": \"1000R\"},\n" +
-   "  {\"code\": \"37 |6/37-ZX|SPC|\", \"value\": \"1000R\"},\n" +
-   "  {\"code\": \"9 |6/37-ZX|SPC|\", \"value\": \"1000R\"}\n" +
-   "]";
-   window.android.printerString(jsondata);
-   //  if (($("#TotalAmount").text() == "") || (parseInt($("#TotalAmount").text()) < 1000)) {
-   //      $(this).removeAttr("data-target");
-   //  } else {
-   //      window.print()
-   //  }
+   // var jsondata = "[\n" 
+   // "  {\"code\": \"7 |6/37-ZX|SPC|\", \"value\": \"1000R\"},\n" +
+   // "  {\"code\": \"7 |6/37-ZX|SPC|\", \"value\": \"1000R\"},\n" +
+   // "  {\"code\": \"22 |6/37-ZX|SPC|\", \"value\": \"1000R\"},\n" +
+   // "  {\"code\": \"37 |6/37-ZX|SPC|\", \"value\": \"1000R\"},\n" +
+   // "  {\"code\": \"9 |6/37-ZX|SPC|\", \"value\": \"1000R\"}\n" +
+   // "]";
+   // window.android.printerString(jsondata);
+    if (($("#TotalAmount").text() == "") || (parseInt($("#TotalAmount").text()) < 1000)) {
+        $(this).removeAttr("data-target");
+    } else {
+        window.print()
+    }
 
 })

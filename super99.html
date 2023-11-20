@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="img/top-logo.png">
+
+  <title>Wingo | POS</title>
+  <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.js"></script>
+
+  <link href="css/app.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/print.css">
+  <link rel="stylesheet" href="css/super99.css">
+</head>
+
+<body id="page-top">
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-dark">
+      <!-- Sidebar - Brand -->
+      <div class="sidebar-brand" style="background-color: rgba(137, 43, 226, 0.76);">
+        <div style="display: flex;">
+          <div class="sidebar-brand-icon">
+            <a href="2d.html"><img class="img-profile" src="img/profile.png" alt="user profile" /></a>
+          </div>
+          <span class="sidebar-brand-text" style="color: white;">
+            User ID:26000023 <br>
+            Last Login: 10 Oct 2021
+          </span>
+        </div>
+      </div>
+      <div class="inner-sidebar overflow-auto">
+        <!-- Nav Item - Transaction -->
+        <li class="nav-item active">
+          <div class="nav-link" href="2d.html">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span>Transaction</span>
+          </div>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="2d.html">
+            <span>Sales</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="redeem.html">
+            <span>Redeem</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="topup-with-tran.html">
+            <span>Top up/Withdraw/Transfer</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+
+
+
+
+        <li class="nav-item active">
+          <div class="nav-link" href="2d.html">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span>Query</span>
+          </div>
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="draw_result.html">
+            <span>Draw Result</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="bonus_report.html">
+            <span>Bonus Report</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="real-time-report.html">
+            <span>Real-Time-Report</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="capital.html">
+            <span>Capital</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="settlement.html">
+            <span>Settlement</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="transaction_record.html">
+            <span>Transaction Record</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+
+
+        <!-- Nav Item - Setting -->
+        <li class="nav-item active">
+          <div class="nav-link" href="">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Setting</span>
+          </div>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="modify_login.html">
+            <span>Modify Login Password</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="modify_pass.html">
+            <span>Modify Tran Password</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="">
+            <span>Printer Test</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <hr class="sidebar-divider" />
+
+        <a href="login.html">
+          <li
+            style="height: 30px;background-color: cadetblue;display: flex;justify-content: center;align-items: center;color: black;">
+            logout</li>
+        </a>
+
+      </div>
+      <!--End inner sidebar-->
+
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block" />
+
+    </ul>
+    <!-- End of Sidebar -->
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light topbar static-top shadow" style="background-color: rgba(137, 43, 226, 0.733);">
+          <div class="topbar-divider d-none d-sm-block"></div>
+          <div class="header-title" style="color: white;">
+            super 1/99
+          </div>
+          <!-- Sidebar Toggle (Topbar) -->
+          <hr class="sidebar-divider my-0" />
+          <!-- Topbar Navbar -->
+          <hr class="hr_2">
+          <div class="topbar-divider d-none d-sm-block"></div>
+          <!-- Nav Item - User Information -->
+          <div class="issue">
+            <div class="issue-date" style="color: white;">
+              <p>Issue W01210825003</p>
+            </div>
+            <div class="curren-time" style="color: white;">
+              <span>05:10</span>
+            </div>
+            <div style="display: flex;justify-content: center;align-items: center;gap: 5px;">
+              <a href="allGame.html"><img src="img/home.png" alt="" class="img-home"></a>
+            </div>
+
+          </div>
+
+        </nav>
+        <!-- End of Topbar -->
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+          <div class="full_g">
+            <div class="block_tem_game">
+              <div class="main-content content-super99">
+                    <div class="block-runtime-issue">
+                      <div class="time-run">00:36</div>
+                      <div class="text-isue"><span>2311080194</span><span>End time</span></div>
+                    </div>
+                    <div class="bet-block">
+                      <div class="ip-bet">
+                        <span id="result">100</span>
+                      </div>
+                      <div class="bet-money">
+                        <div class="in-200 radius-first">
+                        200
+                      </div>
+                      <div class="in-200">
+                        300
+                      </div>
+                      <div class="in-200">
+                        500
+                      </div>
+                      <div class="in-200 radius-last">
+                        1000
+                      </div>
+                      </div>
+                      
+                      <div class="bt-buy" id="selected">
+                        Select
+                      </div>
+                      <div class="bt-print key-print">
+                        Print
+                      </div>
+                    </div>
+                    <div class="post-block">
+                      <div class="post active-bt">Group A</div>
+                      <div class="post">Group B</div>
+                      <div class="post">Group C</div>
+                      <div class="post">Group D</div>
+                      <div class="post">Group E</div>
+                      <div class="post-all">All</div>
+                    </div>
+                    <div class="block-bet-number">
+                      <div class="b1">
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">01</div>
+                          <div class="num-bet">02</div>
+                          <div class="num-bet">03</div>
+                          <div class="num-bet">04</div>
+                          <div class="num-bet">05</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">06</div>
+                          <div class="num-bet">07</div>
+                          <div class="num-bet">08</div>
+                          <div class="num-bet">09</div>
+                          <div class="num-bet">10</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">11</div>
+                          <div class="num-bet">12</div>
+                          <div class="num-bet">13</div>
+                          <div class="num-bet">14</div>
+                          <div class="num-bet">15</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">16</div>
+                          <div class="num-bet">17</div>
+                          <div class="num-bet">18</div>
+                          <div class="num-bet">19</div>
+                          <div class="num-bet">20</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">21</div>
+                          <div class="num-bet">22</div>
+                          <div class="num-bet">23</div>
+                          <div class="num-bet">24</div>
+                          <div class="num-bet">25</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">26</div>
+                          <div class="num-bet">27</div>
+                          <div class="num-bet">28</div>
+                          <div class="num-bet">29</div>
+                          <div class="num-bet">30</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">31</div>
+                          <div class="num-bet">32</div>
+                          <div class="num-bet">33</div>
+                          <div class="num-bet">34</div>
+                          <div class="num-bet">35</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">36</div>
+                          <div class="num-bet">37</div>
+                          <div class="num-bet">38</div>
+                          <div class="num-bet">39</div>
+                          <div class="num-bet">40</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">41</div>
+                          <div class="num-bet">42</div>
+                          <div class="num-bet">43</div>
+                          <div class="num-bet">44</div>
+                          <div class="num-bet">45</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">46</div>
+                          <div class="num-bet">47</div>
+                          <div class="num-bet">48</div>
+                          <div class="num-bet">49</div>
+                          <div class="num-bet">50</div>
+                        </div>
+                      </div>
+                      <div class="b2">
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">51</div>
+                          <div class="num-bet">52</div>
+                          <div class="num-bet">53</div>
+                          <div class="num-bet">54</div>
+                          <div class="num-bet">55</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">56</div>
+                          <div class="num-bet">57</div>
+                          <div class="num-bet">58</div>
+                          <div class="num-bet">59</div>
+                          <div class="num-bet">60</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">61</div>
+                          <div class="num-bet">62</div>
+                          <div class="num-bet">63</div>
+                          <div class="num-bet">64</div>
+                          <div class="num-bet">65</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">66</div>
+                          <div class="num-bet">67</div>
+                          <div class="num-bet">68</div>
+                          <div class="num-bet">69</div>
+                          <div class="num-bet">70</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">71</div>
+                          <div class="num-bet">72</div>
+                          <div class="num-bet">73</div>
+                          <div class="num-bet">74</div>
+                          <div class="num-bet">75</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">76</div>
+                          <div class="num-bet">77</div>
+                          <div class="num-bet">78</div>
+                          <div class="num-bet">79</div>
+                          <div class="num-bet">80</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">81</div>
+                          <div class="num-bet">82</div>
+                          <div class="num-bet">83</div>
+                          <div class="num-bet">84</div>
+                          <div class="num-bet">85</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">86</div>
+                          <div class="num-bet">87</div>
+                          <div class="num-bet">88</div>
+                          <div class="num-bet">89</div>
+                          <div class="num-bet">90</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">91</div>
+                          <div class="num-bet">92</div>
+                          <div class="num-bet">93</div>
+                          <div class="num-bet">94</div>
+                          <div class="num-bet">95</div>
+                        </div>
+                        <div class="r1-bet">
+                          <img class="numbet-row" src="img/asset_1.svg" alt="">
+                          <div class="num-bet">96</div>
+                          <div class="num-bet">97</div>
+                          <div class="num-bet">98</div>
+                          <div class="num-bet">99</div>
+                          <div class="num-hide">99</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="keypad d-none" id="keypad">
+                      <div class="close-bt">x</div>
+                      <button class="number-key">1</button>
+                      <button class="number-key">2</button>
+                      <button class="number-key">3</button>
+                      <button id="delete"><img src="img/dell.png" height="25px" alt=""></button>
+                      <button class="number-key">4</button>
+                      <button class="number-key">5</button>
+                      <button class="number-key">6</button>
+                      <button class="number-key">0</button>
+                      <button class="number-key">7</button>
+                      <button class="number-key">8</button>
+                      <button class="number-key">9</button>
+                      <button id="clear">Clear</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="block_tem_super99 inner-top-super99">
+              <div class="cart cart-height cart-height-super99">
+                <div class="card-header">
+                  Your Cart
+                </div>
+                <ul class="list-group list-group-flush" id="resultPrint">
+                  <div class="inner-cart overflow-auto inner-supper99">
+                    <!--THE RESULT WILL APPEAR HERE-->
+                  </div>
+                </ul>
+                <div class="total total-other-super99">
+                  <div class="block_result">
+                    <div class="div-total">
+                      <div class="total_amount">
+                        <span>Total amount:</span><span class="TotalAmount"><span id="TotalAmount"></span>R</span>
+                      </div>
+                      <div class="sale_today">
+                        <span>Sale Todaty:</span><span>00R</span>
+                      </div>
+                    </div>
+                    <div class="div-total">
+                      <div class="bounus">
+                        <span>Bouns:</span><span>16500R</span>
+                      </div>
+                      <div class="balance_t">
+                        <span>balance:</span><span>177000R</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!--End total-->
+              </div>
+              <!--End cart-->
+
+            </div>
+          </div>
+
+          <!--End col-4-->
+        </div>
+        <!-- Modal -->
+      </div>
+
+
+    </div>
+    <!-- /.container-fluid -->
+    <!-- Footer -->
+    <!-- <footer class="bg-white"></footer> -->
+    <!-- End of Footer -->
+  </div>
+  <div class="ticket text-center">
+    <img class="img-logo-recipe" src="img/receipt-logo.bmp" alt="logo">
+    <div class="head-note">
+      <div class="receipt-number text-left">765-657-332-675-098-980-0</div>
+      <div class="receipt-id">
+        <p>ID: wingo08</p>
+        <p>W01220128001</p>
+      </div>
+      <div class="receipt-date text-left">2022-01-28 08:45:56</div>
+      <div>***********************************************************************************</div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="post-brand">super 1/99</th>
+          <th class="description"></th>
+        </tr>
+      </thead>
+      <tbody id="addRow">
+
+      </tbody>
+    </table>
+    <div>***********************************************************************************</div>
+    <p class="centered">TOTAL AMT: <span id="pri-result"></span></p>
+    <div class="block-qr">
+      <img class="img-qr" src="img/qr.PNG" alt="">
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/super99.js"></script>
+  <script src="js/print.js"></script>
+  <script src="js/index.js"></script>
+
+  <script>
+    // const $btnPrint = document.querySelector("#btnPrint");
+    // $btnPrint.addEventListener("click", () => {
+      
+    // });
+  </script>
+
+</body>
+
+</html>
