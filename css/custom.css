@@ -1107,6 +1107,11 @@ iframe {
   padding: 0px 3px;
 
 }
+.main-content-fortune{
+  height: 650px;
+  background-color: #eaecf4;
+  padding: 0px 3px;
+}
 
 .scroll-to-bottom {
   overflow-y: scroll;
@@ -2096,6 +2101,10 @@ input[type=number] {
   width: 33.33%;
   margin-left: 20px;
 }
+.block_tem_super99{
+  width: 33.33%;
+  margin-left: 20px;
+}
 
 .block_tem_cart_index {
   width: 33.33%;
@@ -2301,9 +2310,18 @@ button {
   }
 
   .total-other {
+    width: 100%;
     position: fixed;
     bottom: 165px;
     z-index: 1;
+  }
+
+  .total-fortune{
+    position: fixed;
+    left: -1px;
+    bottom: 420px;
+    z-index: 1;
+    width: 110%;
   }
 
   .content-key-board {
