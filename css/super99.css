@@ -421,7 +421,7 @@
         grid-template-columns: auto auto auto;
     }
     .block-bet-number{
-        padding-bottom: 120px;
+        padding-bottom: 140px;
     }
     .block-runtime-issue{
         display: none;
@@ -429,7 +429,9 @@
     .bet-block {
         margin-top: 40px;
     }
-    
+    .r1-bet {
+        margin: 4px;
+    }
 }
 @media(max-width: 372px){
     .ip-bet {
