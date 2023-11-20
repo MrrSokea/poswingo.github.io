@@ -3,7 +3,6 @@
     src: url("../font/arial.ttf");
 }
 html{
-    overflow: hidden;
     font-family:arial;
 }
 *{
@@ -27,7 +26,7 @@ a {
     background-image: url("../img/banner.jpg");
     background-position: center;
     background-size: 100% 160%;
-    height: 350px;
+    height: 300px;
     margin-bottom: 25px;
 }
 
@@ -41,12 +40,11 @@ select {
     background-color: transparent;
     font-size: 30px;
 }
-
-.r_1_logo_game {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0px 50px;
+.contain_allgame{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    gap: 20px;
 }
 
 .img_fruit {
@@ -89,15 +87,11 @@ select {
 }
 
 .footer_info_bar {
+    width: 101%;
     background-color: antiquewhite;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 70px;
-    width: 100%;
-    margin-left: -10px;
 }
 
 .pro,
@@ -115,10 +109,7 @@ select {
     background-color: gold;
     height: 50PX;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    margin-left: -10px;
 
 }
 
@@ -144,6 +135,12 @@ select {
 
 .center {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -216,10 +213,15 @@ select {
     .title_game {
         font-size: 25px;
     }
-
-    .r_1_logo_game {
-        padding: 0px;
-    }
+.footer_bar{
+    position: fixed;
+    bottom: 0;
+}
+.footer_info_bar{
+    position: fixed;
+    bottom: 70px;
+    width: 100%;
+}
 }
 
 @media(max-width: 660px) {
@@ -308,8 +310,6 @@ select {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 130px;
-        margin: 5px;
     }
 }
 

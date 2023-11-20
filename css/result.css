@@ -28,6 +28,8 @@
 
 .body-result {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img-arrow {
@@ -150,7 +152,6 @@
     background-color: gold;
     height: 50PX;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
     margin-left: -10px;
@@ -177,6 +178,9 @@
     align-items: center;
 }
 @media(max-width: 1000px){
+    .footer_bar{
+        position: fixed;
+    }
     .result-block {
         padding: 0.5rem 1rem;
     }

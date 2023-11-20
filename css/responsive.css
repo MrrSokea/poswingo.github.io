@@ -778,6 +778,8 @@
 
 .body-result {
     display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .img-arrow {
@@ -807,9 +809,14 @@
 
 .r1-5d {
     display: flex;
-    align-items: center;
+	justify-content: space-between;
 }
-
+.re-super99{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	flex-direction: column;
+}
 .pos {
     font-size: 25px;
 }
