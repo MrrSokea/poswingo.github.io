@@ -432,6 +432,16 @@
     .r1-bet {
         margin: 4px;
     }
+    .num-bet {
+        height: 35px;
+        font-size: 20px;
+        width: 35px;
+    }
+    .numbet-row {
+        height: 35px;
+        font-size: 25px;
+        width: 35px;
+    }
 }
 @media(max-width: 372px){
     .ip-bet {
