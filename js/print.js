@@ -62,8 +62,9 @@ $(".key-print").click(function () {
    // "  {\"code\": \"9 |6/37-ZX|SPC|\", \"value\": \"1000R\"}\n" +
    // "]";
    // window.android.printerString(jsondata);
-    if (($("#TotalAmount").text() == "") || (parseInt($("#TotalAmount").text()) < 1000)) {
+    if (($("#TotalAmount").text() == "") || (parseInt($("#TotalAmount").text()) < 400)) {
         $(this).removeAttr("data-target");
+        alert("Please bet from 500 Riel up")
     } else {
         window.print()
     }
